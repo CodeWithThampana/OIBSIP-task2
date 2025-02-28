@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="home" class="hero">
+    <video class="background-video" autoplay loop muted>
+      <source src="C:\Users\PRAJWAL\Downloads\background-video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Explore my work, skills, and projects!</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>✿ About Me ✿</h2>
+    <div class="about-container">
+      <img class="profile-pic" src="C:\Users\PRAJWAL\Downloads\profile-pic.jpeg" alt="Profile Picture">
+      <div class="bio">
+        <h3>Thampana Umesh</h3>
+        <p>I am a passionate software developer with a love for solving real-world problems. Currently, I'm pursuing a degree in Information Science and Engineering, and I'm always looking to learn new skills and work on exciting projects! With a strong foundation in programming languages such as Java, Python, and JavaScript, I enjoy tackling complex challenges and building efficient solutions.
+          Beyond academics, I actively seek opportunities to explore emerging technologies, particularly AI, cloud computing. I am driven by a desire to create products that improve everyday life and make an impact on the world. In my free time, I love attending tech seminars, participating in hackathons, and collaborating with other passionate developers on open-source projects. My goal is to continue growing as a developer and contribute to projects that push the boundaries of innovation.</p>
+       
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="content">
+        <h2>✿ Skills ✿</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress html"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress css"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress javascript"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Java</h3>
+                <div class="progress-bar">
+                    <div class="progress java"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="progress-bar">
+                    <div class="progress python"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section id="projects" class="projects">
+    <h2>✿ Projects ✿</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <a href="https://github.com/CodeWithThampana/OIBSIP-task2" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>AI Chatbot</h3>
+        <a href="https://github.com/CodeWithThampana/AI-ChatBot" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Todo App</h3>
+        <a href="https://github.com/CodeWithThampana/OIBSIP-task4" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+<section id="resume" class="resume">
+  <h2 class="resume-title">✿ My Resume ✿</h2>
+
+  <div class="resume-container">
+
+    <a href="C:\Users\PRAJWAL\Downloads\Resume`.pdf" target="_blank" class="resume-download">
+      Download My Resume
+    </a>
+
+    <div class="resume-embed-container">
+      <embed src="C:\Users\PRAJWAL\Downloads\Resume`.pdf" width="70%" height="500px" class="resume-embed" />
+    
+    </div>
+
+    <div class="resume-preview">
+      <h3>Preview My Resume</h3>
+      <div class="hover-preview">
+        <div class="preview-overlay"></div>
+        <div class="preview-text">
+          <p>Click to Open</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const preview = document.querySelector('.hover-preview');
+  const overlay = document.querySelector('.preview-overlay');
+  const previewText = document.querySelector('.preview-text');
+
+  preview.addEventListener('mouseenter', () => {
+    overlay.style.opacity = '1';
+    previewText.style.opacity = '1';
+    preview.style.transform = 'scale(1.05)';
+  });
+
+  preview.addEventListener('mouseleave', () => {
+    overlay.style.opacity = '0';
+    previewText.style.opacity = '0';
+    preview.style.transform = 'scale(1)';
+  });
+</script>
+
+
+  <section id="contact" class="contact">
+    <h2>✿ Contact Me ✿</h2>
+    <div class="contact-info">
+      <div class="contact-item">
+        <img src="phone-icon.png" alt="Phone">
+        <p>+91 935 3xx xxx</p>
+      </div>
+      <div class="contact-item">
+        <img src="email-icon.png" alt="Email">
+        <p>thampanaumesh.@gmail.com</p>
+      </div>
+      <div class="contact-item">
+        <img src="linkedin-icon.png" alt="LinkedIn">
+        <p>@Thampana-Umesh</p>
+      </div>
+      <div class="contact-item">
+        <img src="GitHub-icon.png" alt="GitHub">
+        <p>@CodeWithThampana</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Thampanaumesh. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
